@@ -1,0 +1,12 @@
+
+    
+    
+  <%- include('./partials/nav.ejs')  %> 
+      <div class="container">
+      <ul class="list-group" style="margin-top: 20px;">
+        <% listData.forEach(list =>{ %>
+          <li class="list-group-item"><%= list.content %></li>
+          <%})%>
+        </ul>
+    </div>
+    <%- include('./partials/footer.ejs')  %>
